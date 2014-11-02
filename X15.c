@@ -1,4 +1,4 @@
-#include "bitblock.h"
+#include "X15.h"
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
@@ -20,7 +20,7 @@
 #include "sha3/sph_shabal.h"
 #include "sha3/sph_whirlpool.h"
 
-void bitblock_hash(const char* input, char* output)
+void X15_hash(const char* input, char* output)
 {
     sph_blake512_context     ctx_blake;
     sph_bmw512_context       ctx_bmw;

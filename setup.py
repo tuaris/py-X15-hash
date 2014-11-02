@@ -1,8 +1,8 @@
 from distutils.core import setup, Extension
 
-bitblock_hash_module = Extension('bitblock_hash',
-                               sources = ['bitblockmodule.c',
-                                          'bitblock.c',
+X15_hash_module = Extension('X15_hash',
+                               sources = ['X15module.c',
+                                          'X15.c',
 										  'sha3/blake.c',
 										  'sha3/bmw.c',
 										  'sha3/groestl.c',
@@ -22,7 +22,7 @@ bitblock_hash_module = Extension('bitblock_hash',
 
                                include_dirs=['.', './sha3'])
 
-setup (name = 'bitblock_hash',
+setup (name = 'X15_hash',
        version = '1.0',
-       description = 'Bindings for proof of work used by BitBlock',
-       ext_modules = [bitblock_hash_module])
+       description = 'Bindings for proof of work used by X15',
+       ext_modules = [X15_hash_module])

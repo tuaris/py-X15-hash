@@ -1,11 +1,11 @@
-#ifndef X13_H
-#define X13_H
+#ifndef X15_H
+#define X15_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-void x13_hash(const char* input, char* output);
+void X15_hash(const char* input, char* output);
 
 #ifdef __cplusplus
 }
